@@ -526,7 +526,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Zoou-Md',
+                pack: 'Eypz-WaBot',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -779,13 +779,13 @@ ${metadata.desc}`;
 
                  
                 },{
-                    timezone: "Africa/Abidjan"
+                    timezone: "India/Kolakata"
                   });
               }
         
             }
           } else {
-            console.log('Les crons n\'ont pas été activés');
+            console.log('The crons n\'have not been activated');
           }
 
           return
@@ -812,18 +812,18 @@ ${metadata.desc}`;
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Connexion en cours...");
+                console.log("ℹ️ Current connection...");
             }
             else if (connection === 'open') {
-                console.log("✅ connexion reussie! ☺️");
+                console.log("✅ Successful connection! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("le bot est en ligne 🕸\n\n");
+                console.log("the bot is online 🕸\n\n");
                 //chargement des commandes 
-                console.log("chargement des commandes ...\n");
+                console.log("loading orders ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
@@ -831,7 +831,7 @@ ${metadata.desc}`;
                             console.log(fichier + " installé ✔️");
                         }
                         catch (e) {
-                            console.log(`${fichier} n'a pas pu être chargé pour les raisons suivantes : ${e}`);
+                            console.log(`${fichier} could not be loaded for the following reasons : ${e}`);
                         } /* require(__dirname + "/commandes/" + fichier);
                          console.log(fichier + " installé ✔️")*/
                         (0, baileys_1.delay)(300);
@@ -848,7 +848,7 @@ ${metadata.desc}`;
                 else {
                     md = "undefined";
                 }
-                console.log("chargement des commandes terminé ✅");
+                console.log("loading orders completed ✅");
 
                 await activateCrons();
                 
@@ -862,10 +862,7 @@ ${metadata.desc}`;
 
 ╔═════◇
 
-YouTube:"https://youtube.com/@KouameDjakiss?si=k2HqPPSmHBZe3ABd"
- 
-s'il y a des erreurs, vous pouvez nous le dire :)
-  merci d'avoir choisi HACKING MD
+  Thank You For choosing Eypz-WaBot
 
 ╚══════════════════╝`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
@@ -881,21 +878,21 @@ s'il y a des erreurs, vous pouvez nous le dire :)
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionLost) {
-                    console.log('connexion au serveur perdue 😞 ,,, reconnexion en cours ... ');
+                    console.log('connection to server lost 😞 ,,, reconnection in progress ... ');
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason?.connectionReplaced) {
                     console.log('connexion réplacée ,,, une sesssion est déjà ouverte veuillez la fermer svp !!!');
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.loggedOut) {
-                    console.log('vous êtes déconnecté,,, veuillez rescanner le code qr svp');
+                    console.log('you are disconnected,,, please rescan the qr code');
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.restartRequired) {
                     console.log('redémarrage en cours ▶️');
                     main();
                 }   else {
 
-                    console.log('redemarrage sur le coup de l\'erreur  ',raisonDeconnexion) ;         
+                    console.log('restart at the drop of a hat\'error  ',raisonDeconnexion) ;         
                     //repondre("* Redémarrage du bot en cour ...*");
 
                                 const {exec}=require("child_process") ;
