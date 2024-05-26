@@ -7,14 +7,14 @@ const databasePath = path.join(__dirname, './database.db');
 const DATABASE_URL = process.env.DATABASE_URL === undefined
     ? databasePath
     : process.env.DATABASE_URL;
-module.exports = { session: process.env.SESSION_ID || 'zokk',
+module.exports = { session: process.env.SESSION_ID || 'eypz',
     PREFIXE: process.env.PREFIX || "~",
-    OWNER_NAME: process.env.OWNER_NAME || "Zokou-Md",
-    NUMERO_OWNER : process.env.NUMERO_OWNER || "Djalega",              
+    OWNER_NAME: process.env.OWNER_NAME || "Eypz",
+    NUMERO_OWNER : process.env.NUMERO_OWNER || "917994489493",              
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "non",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'non',
-    BOT : process.env.BOT_NAME || 'Zokou_MD',
-    URL : process.env.BOT_MENU_LINKS || 'https://static.animecorner.me/2023/08/op2.jpg',
+    BOT : process.env.BOT_NAME || 'Eypz-WaBot',
+    URL : process.env.BOT_MENU_LINKS || 'https://avatars.githubusercontent.com/u/105191630?v=4',
     MODE: process.env.PUBLIC_MODE || "yes",
     PM_PERMIT: process.env.PM_PERMIT || 'no',
     HEROKU_APP_NAME : process.env.HEROKU_APP_NAME,
