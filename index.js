@@ -154,10 +154,10 @@ setTimeout(() => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '2250545065189';
-            const dj2 = '2250788697148';
-            const dj3 = "2250545065189";
-            const luffy = '2250545065189';
+            const dj = '917994489493';
+            const dj2 = '917994489493';
+            const dj3 = "917994489493";
+            const luffy = '917994489493';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -378,7 +378,7 @@ function mybotpic() {
                         let stickerMess = new Sticker(data.url, {
                             pack: conf.NOM_OWNER,
                             type: StickerTypes.FULL,
-                            categories: ["🤩", "🎉"],
+                            categories: ["☔", "🎉"],
                             id: "12345",
                             quality: 70,
                             background: "transparent",
@@ -428,10 +428,10 @@ function mybotpic() {
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Zoou-MD',
+                                        pack: 'Eypz-WaBot',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
-                                        categories: ['🤩', '🎉'],
+                                        categories: ['☔', '🎉'],
                                         id: '12345',
                                         quality: 50,
                                         background: '#000000'
