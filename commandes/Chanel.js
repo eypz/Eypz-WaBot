@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 
 zokou({ nomCom: "channel", categorie:"General", reaction: "💎", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
-  const img = 'https://telegra.ph/file/b9a0855b3741a8b62a796.jpg';
+  const img = 'https://avatars.githubusercontent.com/u/105191630?v=4';
 
   try {
     const response = await fetch(githubRepo);
@@ -21,8 +21,7 @@ zokou({ nomCom: "channel", categorie:"General", reaction: "💎", nomFichier: __
       const lastUpdateDate = new Date(data.updated_at).toLocaleDateString('en-GB');
 
       const gitdata = `HELLO 👋 
-THIS YOU *HACKING-MD.*\n YOU DEPLOYE THIS *WhatsApp*, *channel*  
- Follow the HACKING-MD channel on WhatsApp: https://whatsapp.com/channel/0029VaYrk3lIiRozw8zeoh00
+THIS YOU *Eypz-WaBot.*\n Follow the Eypz-WaBot channel on WhatsApp: https://whatsapp.com/channel/0029Vaf2tKvGZNCmuSg8ma2O
 
 📅 *RELEASE DATE:* ${releaseDate}
 🕐 *UPDATE ON:* ${repoInfo.lastUpdate}
