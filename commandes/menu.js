@@ -33,20 +33,16 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╭────✧${s.BOT }✧────◆
-Eypz-WaBot
-     ╭──────────────
-|❏│   _Préfix_ : ${s.PREFIXE}
-|❏│   _Proprio_ : ${s.OWNER_NAME}
-|❏│   _Mode_ : ${mode}
-|❏│   _Commands_ : ${cm.length}
-|❏│   _Date_ : ${date}
-|❏│   _Heure_ : ${temps}
-|❏│   _Mémoire_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-|❏│   _Plateforme_ : ${os.platform()}
-|❏│   _Développer_ : Eypz
+|❏│   *Prefix* : ${s.PREFIXE}
+|❏│   *Proprio* : ${s.OWNER_NAME}
+|❏│   *Mode* : ${mode}
+|❏│   *Commands* : ${cm.length}
+|❏│   *Date* : ${date}
+|❏│   *Memory*: ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+|❏│   *Platform*: ${os.platform()}
+|❏│   *Développer* : Eypz
 |❏|    𝘃𝗲𝗿𝘀𝗶𝗼𝗻    : 1.0.0
-    ╰───────────────
-╰─────✧THO-BOT✧─────◆ \n\n`;
+╰─────✧EYPZ✧─────◆ \n\n`;
     
 
 let menuMsg = `
