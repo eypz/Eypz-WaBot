@@ -33,7 +33,7 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 ╭────✧${s.BOT }✧────◆
-𝗛𝗔𝗖𝗞𝗜𝗡𝗚-𝗠𝗗 𝗕𝗢𝗧 𝗡𝗘𝗪 𝗩𝗘𝗥𝗦𝗜𝗢𝗡
+Eypz-WaBot
      ╭──────────────
 |❏│   _Préfix_ : ${s.PREFIXE}
 |❏│   _Proprio_ : ${s.OWNER_NAME}
@@ -43,9 +43,8 @@ const date = moment().format('DD/MM/YYYY');
 |❏│   _Heure_ : ${temps}
 |❏│   _Mémoire_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 |❏│   _Plateforme_ : ${os.platform()}
-|❏│   _Développer_ : 𝗧𝗛𝗢𝗠𝗔𝗦
-|❏│  & 𝗠𝗗-𝗛𝗔𝗖𝗞𝗘𝗥
-|❏|    𝘃𝗲𝗿𝘀𝗶𝗼𝗻    : 𝘝7.2
+|❏│   _Développer_ : Eypz
+|❏|    𝘃𝗲𝗿𝘀𝗶𝗼𝗻    : 1.0.0
     ╰───────────────
 ╰─────✧THO-BOT✧─────◆ \n\n`;
     
@@ -53,7 +52,7 @@ const date = moment().format('DD/MM/YYYY');
 let menuMsg = `
 👋 Hello how are you ${nomAuteurMessage} 👋
 
-*Liste des commandes de HACKING-MD:*
+*Liste des commandes de Eypz-WaBot:*
 ◇                             ◇
 `;
 
@@ -87,9 +86,7 @@ menuMsg += `
 ◇            ◇
 *»»————— ★ —————««*
 "Mettre la commande, et insérez ${prefixe} tu like et la commande_nom."
- 
-    *Support by HACKING-MD* 
-   Voici mon lien 𝗬𝗼𝘂𝘁𝘂𝗯𝗲:"https://youtube.com/@KouameDjakiss?si=k2HqPPSmHBZe3ABd"                                          
+                                           
 *»»—————    ★   —————««*
 `;
 
