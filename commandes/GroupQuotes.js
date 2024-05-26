@@ -13,13 +13,13 @@ zokou({ nomCom: 'quote', categorie: 'Group' }, async (dest, zk, commandeOptions)
       fetch('https://animechan.xyz/api/random')
         .then((response) => response.json())
         .then(async (quote) => {
-          repondre(`*HACKING-MD Quotes*
+          repondre(`*Eypz-WaBot Quotes*
 
 🎬 Anime: ${quote.anime}
 👤 Character: ${quote.character}
 💬 Quote: ${quote.quote}
 
-Powered by *Hacking md*`);
+Powered by *Eypz-WaBot*`);
         });
     } catch (e) {
       repondre('Erreur lors de la génération de la citation : ' + e.message);
