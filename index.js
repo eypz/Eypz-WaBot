@@ -663,7 +663,7 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = 'https://telegra.ph/file/4cc2712eee93c105f6739.jpg';
+        ppgroup = 'https://avatars.githubusercontent.com/u/105191630?v=4';
     }
 
     try {
@@ -671,8 +671,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
             let msg = `╔════◇◇◇═════╗
-║ bienvenue chère  nouvoux(s) membre(s)
-║ *Nouveaux(s) Membre(s) :*voici lien YouTube:https://youtube.com/@KouameDjakiss?si=k2HqPPSmHBZe3ABd",
+║ bienvenue chère  nouvoux(s) membre(s),
 `;
 
             let membres = group.participants;
@@ -762,7 +761,7 @@ ${metadata.desc}`;
                   zk.sendMessage(crons[i].group_id, { image : { url : './media/chrono.webp'} , caption: "Hello, it's time to close the group; sayonara." });
 
                 }, {
-                    timezone: "Africa/Abidjan"
+                    timezone: "India/Kolkata"
                   });
               }
         
@@ -854,7 +853,7 @@ ${metadata.desc}`;
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg = `╔════◇
-║ 『HACKING-MD』
+║ 『EYPZ-WABOT』
 ║    Prefix : [ ${prefixe} ]
 ║    Mode :${md}
 ║    Total Commandes : ${evt.cm.length}︎
